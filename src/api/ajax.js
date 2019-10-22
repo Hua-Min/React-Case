@@ -2,9 +2,9 @@ import axios from 'axios'
 import {message} from "antd";
 
 
-const BASEURL = "http://localhost:3000";
+const BASEURL = "http://localhost:3000/";
 
-const ajax = (url, data = {}, type,baseURl = BASEURL) => {
+const ajax = (url, data = {}, type='get',baseURl = BASEURL) => {
 
     return new Promise(resolve => {
         if (type.toLowerCase() === 'get') {
